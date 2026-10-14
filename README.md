@@ -2,7 +2,7 @@
 
 Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.
 
-**Demo live:** https://portfolio-rex-zeta.vercel.app
+**Demo live:** https://portfolio-rex.pintuweb.id
 
 ![Tangkapan layar](public/og.jpg)
 
@@ -21,12 +21,12 @@ Persona fiktif Rex, desainer grafis yang juga menulis kode. Neo-brutalis: garis 
 
 | Studi kasus | Demo live |
 | --- | --- |
-| Disko Panda | https://linkinbio-disko.vercel.app |
-| Kaset Kita FM | https://linkinbio-kaset.vercel.app |
-| Laras | https://linkinbio-vinyl.vercel.app |
-| Jajanan Bu Rina | https://linkinbio-jajan.vercel.app |
-| Tasty Corner | https://landing-tastycorner.vercel.app |
-| Modewear | https://landing-modewear.vercel.app |
+| Disko Panda | https://linkinbio-disko.pintuweb.id |
+| Kaset Kita FM | https://linkinbio-kaset.pintuweb.id |
+| Laras | https://linkinbio-vinyl.pintuweb.id |
+| Jajanan Bu Rina | https://linkinbio-jajan.pintuweb.id |
+| Tasty Corner | https://landing-tastycorner.pintuweb.id |
+| Modewear | https://landing-modewear.pintuweb.id |
 
 ## Halaman
 

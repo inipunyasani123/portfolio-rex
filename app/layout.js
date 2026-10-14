@@ -12,7 +12,7 @@ const spaceMono = Space_Mono({ variable: "--font-space-mono", subsets: ["latin"]
 const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Rex — Graphic Designer & Front-end Dev","description":"Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.","inLanguage":"en"};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-rex-zeta.vercel.app"),
+  metadataBase: new URL("https://portfolio-rex.pintuweb.id"),
   title: { default: "Rex — Graphic Designer & Front-end Dev", template: "%s — Rex" },
   description: "Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.",
   applicationName: "Rex",
@@ -20,11 +20,11 @@ export const metadata = {
   authors: [{ name: "Rex" }],
   creator: "Rex",
   publisher: "Rex",
-  alternates: { canonical: "https://portfolio-rex-zeta.vercel.app" },
+  alternates: { canonical: "https://portfolio-rex.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portfolio-rex-zeta.vercel.app",
+    url: "https://portfolio-rex.pintuweb.id",
     siteName: "Rex",
     title: "Rex — Graphic Designer & Front-end Dev",
     description: "Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.",
