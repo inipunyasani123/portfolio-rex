@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="nb-lg mb-12 bg-lime-300 p-8 text-black md:p-10">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
             <h2 className="max-w-xl font-display text-4xl uppercase leading-none md:text-5xl">Got something loud to build?</h2>
-            <Link href="/contact" className="nb nb-hover shrink-0 bg-white px-7 py-3 font-black uppercase">Start a project →</Link>
+            <Link href="/contact" className="nb nb-hover inline-flex min-h-12 shrink-0 items-center bg-white px-7 font-black uppercase">Start a project →</Link>
           </div>
         </div>
 
@@ -16,17 +16,17 @@ export default function Footer() {
           <div>
             <h3 className="inline-block bg-lime-300 px-2 font-display text-2xl uppercase text-black">Rex</h3>
             <p className="mt-3 max-w-xs text-sm text-white/60">{profile.role} · {profile.location}.</p>
-            <a href={`mailto:${profile.email}`} className="mt-3 inline-block font-bold text-lime-300 hover:underline">{profile.email}</a>
+            <a href={`mailto:${profile.email}`} className="mt-2 inline-block py-1.5 font-bold text-lime-300 hover:underline">{profile.email}</a>
           </div>
           <div>
             <p className="text-sm font-black uppercase tracking-widest text-white/40">Menu</p>
-            <ul className="mt-3 space-y-2">
-              {nav.map((l) => <li key={l.href}><Link href={l.href} className="text-sm font-bold uppercase text-white/70 transition hover:text-lime-300">{l.label}</Link></li>)}
+            <ul className="mt-2">
+              {nav.map((l) => <li key={l.href}><Link href={l.href} className="inline-block py-1.5 text-sm font-bold uppercase text-white/70 transition hover:text-lime-300">{l.label}</Link></li>)}
             </ul>
           </div>
           <div>
             <p className="text-sm font-black uppercase tracking-widest text-white/40">About this site</p>
-            <p className="mt-3 text-sm opacity-80">A portfolio template with a fictional persona. Every project links to a live demo site; there are no real clients or testimonials here.</p>
+            <p className="mt-3 text-sm text-white/70">A portfolio template with a fictional persona. Every project links to a live demo site; there are no real clients or testimonials here.</p>
           </div>
         </div>
 

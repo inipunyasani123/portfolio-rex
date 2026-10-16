@@ -4,38 +4,29 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeToggle from "@/components/ThemeToggle";
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESC, pageMeta } from "@/lib/seo";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const anton = Anton({ variable: "--font-anton", subsets: ["latin"], weight: "400" });
 const spaceMono = Space_Mono({ variable: "--font-space-mono", subsets: ["latin"], weight: ["400", "700"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"Rex — Graphic Designer & Front-end Dev","description":"Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.","inLanguage":"en"};
+const __jsonld = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": `${SITE_URL}/#website`, "url": SITE_URL, "name": SITE_TITLE, "description": SITE_DESC, "inLanguage": "en", "author": { "@id": `${SITE_URL}/#person` } },
+    { "@type": "Person", "@id": `${SITE_URL}/#person`, "name": "Rex", "jobTitle": "Graphic Designer & Front-end Developer", "description": "A fictional persona for this portfolio template.", "url": SITE_URL },
+  ],
+};
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-rex.pintuweb.id"),
-  title: { default: "Rex — Graphic Designer & Front-end Dev", template: "%s — Rex" },
-  description: "Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.",
-  applicationName: "Rex",
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_TITLE, template: `%s — ${SITE_NAME}` },
+  applicationName: SITE_NAME,
   keywords: ["graphic designer", "front-end developer", "neo-brutalism", "portfolio", "bold design"],
-  authors: [{ name: "Rex" }],
-  creator: "Rex",
-  publisher: "Rex",
-  alternates: { canonical: "https://portfolio-rex.pintuweb.id" },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://portfolio-rex.pintuweb.id",
-    siteName: "Rex",
-    title: "Rex — Graphic Designer & Front-end Dev",
-    description: "Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Rex — Graphic Designer & Front-end Dev" }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rex — Graphic Designer & Front-end Dev",
-    description: "Portfolio template for Rex, a fictional graphic designer and front-end developer: loud neo-brutalist case studies that link to six live demo sites, plus articles on opening hours, radio schedules, and liner notes.",
-    images: ["/og.jpg"],
-  },
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  ...pageMeta({ description: SITE_DESC, path: '/' }),
   robots: {
     index: true,
     follow: true,
@@ -47,6 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${anton.variable} ${spaceMono.variable}`} suppressHydrationWarning>
       <body className="antialiased">
+        <a href="#konten" className="skip-link">Skip to content</a>
         <ThemeProvider>
           <Navbar />
           {children}

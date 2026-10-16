@@ -1,9 +1,11 @@
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/ui/Reveal';
 import { posts } from '@/lib/data';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata = { title: 'Blog' };
+export const metadata = pageMeta({ title: 'Blog', description: "Hot takes by Rex on open/closed signs that follow the clock, a radio schedule that counts down, and album pages with full liner notes.", path: '/blog' });
 
 export default function BlogPage() {
   return (
@@ -13,7 +15,7 @@ export default function BlogPage() {
         <div className="mx-auto grid max-w-6xl gap-5">
           {posts.map((p, i) => (
             <Reveal key={p.title} delay={(i % 3) * 0.08}>
-              <a href={`/blog/${p.slug}`} className="nb nb-hover group flex flex-col justify-between gap-4 bg-white p-6 sm:flex-row sm:items-center md:p-7">
+              <Link href={`/blog/${p.slug}`} className="nb nb-hover group flex flex-col justify-between gap-4 bg-white p-6 sm:flex-row sm:items-center md:p-7">
                 <div className="max-w-2xl">
                   <div className="mb-2 flex items-center gap-3 text-xs font-bold uppercase text-black/50">
                     <span className="nb bg-lime-300 px-2 py-0.5">{p.category}</span>
@@ -23,7 +25,7 @@ export default function BlogPage() {
                   <p className="mt-2 font-medium text-black/70">{p.excerpt}</p>
                 </div>
                 <ArrowUpRight className="hidden shrink-0 transition group-hover:translate-x-1 sm:block" />
-              </a>
+              </Link>
             </Reveal>
           ))}
         </div>

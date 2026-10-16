@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import Reveal from '@/components/ui/Reveal';
 import { profile, skills, experience, education } from '@/lib/data';
+import { pageMeta } from '@/lib/seo';
 
-export const metadata = { title: 'About' };
+export const metadata = pageMeta({ title: 'About', description: "About Rex, a fictional graphic designer and front-end dev in Bandung: posters, schedules, and pages for bands, radios, and food stalls.", path: '/about' });
 
 export default function AboutPage() {
   return (
@@ -27,7 +28,7 @@ export default function AboutPage() {
               {profile.bio.map((p, i) => <p key={i}>{p}</p>)}
             </div>
             <Link href="/contact" className="nb nb-hover nb-press mt-7 inline-flex items-center gap-2 bg-lime-300 px-6 py-3 font-black uppercase">
-              <Download size={16} /> Download CV
+              Ask for a CV <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </Reveal>
         </div>
