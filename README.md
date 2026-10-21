@@ -34,9 +34,12 @@ Persona fiktif Rex, desainer grafis yang juga menulis kode. Neo-brutalis: garis 
 
 ## Gambar & kredit
 
-- `public/images/work/*.webp` — tangkapan layar demo live di tabel atas (karya koleksi ini sendiri).
-- `public/images/hero.webp` — "Designer Logo" oleh Messala Ciulla, [StockSnap](https://stocksnap.io/photo/designer-logo-GW7VC9EJ0X), lisensi CC0.
-- `public/images/about.webp` — "Office Work" oleh Negative Space, [StockSnap](https://stocksnap.io/photo/office-work-VHXFNKMU96), lisensi CC0.
+- `public/images/work/*.webp` — mockup bingkai peramban + ponsel (tiga ponsel untuk halaman tautan dan undangan) berisi
+  tangkapan layar demo live di tabel atas, diambil 18 Okt 2026; bingkainya digambar dengan gaya situs ini.
+  `public/og/work/*.jpg` adalah versi 1200×630-nya untuk pratinjau tautan.
+- `public/images/hero.webp`, `public/images/about.webp` — ilustrasi potret persona fiktif Rex buatan sendiri
+  (gaya poster halftone hitam-putih (di situs diberi grayscale + multiply di atas lime)); sumber SVG-nya di `design/`. Bukan wajah orang sungguhan dan tidak memakai foto stok.
+- `public/og.jpg` — tangkapan beranda 1200×630.
 
 ## Teknologi
 

@@ -40,7 +40,7 @@ export default function Home() {
             <Link href="/about" className="mt-6 inline-flex min-h-11 items-center gap-1 font-mono text-sm font-bold uppercase underline-offset-4 hover:underline">More about me <ArrowUpRight size={15} aria-hidden="true" /></Link>
           </div>
           <div className="relative min-h-[340px] bg-lime-400">
-            <Image src={profile.avatar} alt="" fill priority fetchPriority="high" sizes="(max-width:768px) 100vw, 50vw" className="object-cover contrast-125 grayscale mix-blend-multiply" />
+            <Image src={profile.avatar} alt={profile.avatarAlt} fill priority fetchPriority="high" sizes="(max-width:768px) 100vw, 50vw" className="object-cover contrast-125 grayscale mix-blend-multiply" />
           </div>
         </div>
       </section>

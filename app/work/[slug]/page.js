@@ -37,7 +37,7 @@ export default async function CaseStudy({ params }) {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.6fr_1fr]">
           <div className="nb bg-white p-2">
             <div className="relative aspect-[4/3] overflow-hidden border-[3px] border-black">
-              <Image src={p.image} alt={`Screenshot of ${p.title}`} fill priority fetchPriority="high" sizes="(max-width:1024px) 100vw, 60vw" className="object-cover object-top" />
+              <Image src={p.image} alt={`Screens from the ${p.title} live demo`} fill priority fetchPriority="high" sizes="(max-width:1024px) 100vw, 60vw" className="object-cover object-top" />
             </div>
           </div>
           <aside className="nb h-fit bg-white p-6">

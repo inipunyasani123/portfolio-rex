@@ -18,7 +18,7 @@ export default function AboutPage() {
           <Reveal>
             <div className="nb-lg bg-white p-2">
               <div className="relative aspect-[4/5] w-full overflow-hidden">
-                <Image src={profile.about} alt="" fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover grayscale contrast-125" />
+                <Image src={profile.about} alt={profile.aboutAlt} fill sizes="(max-width:768px) 100vw, 50vw" className="object-cover grayscale contrast-125" />
               </div>
             </div>
           </Reveal>
