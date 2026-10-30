@@ -14,3 +14,4 @@ Rex adalah tokoh rekaan. Tidak ada foto orang dan tidak ada testimoni.
 | work/modewear.webp | Mockup halaman Modewear | Idem; ilustrasi tokoh tanpa wajah | Karya sendiri |
 
 Gambar OG di `public/og.jpg` dan `public/og/work/*.jpg` dibuat dari gambar di atas.
+- 30 Okt 2026 (sore): tangkapan mockup di work/ diambil ulang dari situs contoh yang sudah tanpa wajah; og/work/*.jpg dibuat ulang darinya.
