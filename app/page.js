@@ -51,7 +51,7 @@ export default function Home() {
           {stats.map((s, i) => (
             <div key={s.label} className={`px-6 py-7 ${i < 3 ? 'border-white/20 md:border-r' : ''}`}>
               <p className="font-display text-5xl text-lime-300">{s.value}</p>
-              <p className="mt-1 font-mono text-[11px] uppercase tracking-widest text-white/60">{s.label}</p>
+              <p className="mt-1 font-mono text-xs uppercase tracking-widest text-white/60">{s.label}</p>
             </div>
           ))}
         </div>

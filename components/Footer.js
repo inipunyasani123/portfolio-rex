@@ -16,12 +16,12 @@ export default function Footer() {
           <div>
             <h3 className="inline-block bg-lime-300 px-2 font-display text-2xl uppercase text-black">Rex</h3>
             <p className="mt-3 max-w-xs text-sm text-white/60">{profile.role} · {profile.location}.</p>
-            <a href={`mailto:${profile.email}`} className="mt-2 inline-block py-1.5 font-bold text-lime-300 hover:underline">{profile.email}</a>
+            <a href={`mailto:${profile.email}`} className="mt-2 inline-block py-3 font-bold text-lime-300 hover:underline">{profile.email}</a>
           </div>
           <div>
             <p className="text-sm font-black uppercase tracking-widest text-white/40">Menu</p>
             <ul className="mt-2">
-              {nav.map((l) => <li key={l.href}><Link href={l.href} className="inline-block py-1.5 text-sm font-bold uppercase text-white/70 transition hover:text-lime-300">{l.label}</Link></li>)}
+              {nav.map((l) => <li key={l.href}><Link href={l.href} className="inline-block py-3 text-sm font-bold uppercase text-white/70 transition hover:text-lime-300">{l.label}</Link></li>)}
             </ul>
           </div>
           <div>
